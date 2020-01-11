@@ -1,0 +1,10 @@
+2020-01-11 09:43:02,061 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-01-11 09:46:41,648 [Worker-13: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' /Users/sagir/hibernate/HibenrateBasic/pom.xml
+2020-01-11 09:46:43,339 [Worker-13: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HibenrateBasic:0.0.1-SNAPSHOT @ /Users/sagir/hibernate/HibenrateBasic/pom.xml.
+2020-01-11 09:46:44,530 [Worker-13: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HibenrateBasic/src/main/java
+2020-01-11 09:46:44,535 [Worker-13: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HibenrateBasic/src/test/java
+2020-01-11 09:46:45,441 [Worker-13: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2020-01-11 09:46:46,959 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-11 09:46:46,959 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/sagir/hibernate/HibenrateBasic/src/main/resources
+2020-01-11 09:46:46,961 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-11 09:46:46,962 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/sagir/hibernate/HibenrateBasic/src/test/resources
