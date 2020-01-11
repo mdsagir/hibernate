@@ -1,0 +1,31 @@
+package com.hibernate;
+
+import java.util.List;
+import java.util.logging.Level;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hibernate.model.User;
+import com.hibernate.util.HibernateUtil;
+
+public class Main {
+
+	public static void main(String[] args) {
+		java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
+
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+		CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+		CriteriaQuery<User> createQuery = criteriaBuilder.createQuery(User.class);
+		createQuery.from(User.class);
+		
+        List<User> users = session.createQuery(createQuery).getResultList();
+        //session.getTransaction().commit();
+		users.forEach(System.out::println);
+	}
+}
