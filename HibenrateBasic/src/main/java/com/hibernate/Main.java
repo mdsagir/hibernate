@@ -8,6 +8,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+import com.hibernate.model.Book;
 import com.hibernate.model.User;
 import com.hibernate.util.HibernateUtil;
 
@@ -18,7 +19,10 @@ public class Main {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		
-		//criteriaEx(session);
+		Book book = session.get(Book.class, 1);
+		System.out.println(book.getTitle());
+		//System.out.println(book.getReviews().size());
+		session.close();
 		
 	}
 	
